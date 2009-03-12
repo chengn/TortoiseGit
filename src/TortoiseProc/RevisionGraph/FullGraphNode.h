@@ -18,12 +18,13 @@
 //
 #pragma once
 
-#include "./Containers/DictionaryBasedTempPath.h"
+//#include "./Containers/DictionaryBasedTempPath.h"
 #include "SimpleList.h"
 #include "NodeClassification.h"
 
-using namespace LogCache;
+//using namespace LogCache;
 
+typedef CString CDictionaryBasedTempPath;
 /**
  * \ingroup TortoiseProc
  * Helper class, representing a revision with all the required information

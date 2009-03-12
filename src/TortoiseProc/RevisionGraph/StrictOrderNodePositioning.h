@@ -20,13 +20,13 @@
 
 #include "LayoutOptions.h"
 #include "RevisionGraphOptionsImpl.h"
-#include "./Containers/LogCacheGlobals.h"
+//#include "./Containers/LogCacheGlobals.h"
 
 class IRevisionGraphLayout;
 class IStandardLayoutNodeAccess;
 class CStandardLayoutNodeInfo;
 
-using namespace LogCache;
+//using namespace LogCache;
 
 class CStrictOrderNodePositioning 
     : public CRevisionGraphOptionImpl<ILayoutOption, 200, 0>

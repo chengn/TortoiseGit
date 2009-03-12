@@ -78,7 +78,7 @@
 
 
 #define __WIN32__
-
+#include "boost/pool/object_pool.hpp"
 
 #define USE_GDI_GRADIENT
 #define HISTORYCOMBO_WITH_SYSIMAGELIST

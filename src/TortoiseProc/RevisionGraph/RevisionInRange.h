@@ -20,7 +20,7 @@
 
 // include base classes
 
-#include "./Containers/LogCacheGlobals.h"
+//#include "./Containers/LogCacheGlobals.h"
 #include "CopyFilterOptions.h"
 #include "revisiongraphoptionsimpl.h"
 #include "Resource.h"
@@ -29,7 +29,8 @@
 * no surviving copy. Upper and lower bounds are inclusive.
 */
 
-using namespace LogCache;
+//using namespace LogCache;
+typedef CString revision_t;
 
 class CRevisionInRange 
     : public CRevisionGraphOptionImpl< ICopyFilterOption
