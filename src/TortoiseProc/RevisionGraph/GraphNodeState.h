@@ -22,9 +22,10 @@
 // required includes
 ///////////////////////////////////////////////////////////////
 
-#include "./Containers/DictionaryBasedTempPath.h"
+//#include "./Containers/DictionaryBasedTempPath.h"
+#include "gitgraph.h"
 
-using namespace LogCache;
+//using namespace LogCache;
 
 ///////////////////////////////////////////////////////////////
 // forward declarations

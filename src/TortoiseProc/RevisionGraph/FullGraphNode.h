@@ -19,12 +19,12 @@
 #pragma once
 
 //#include "./Containers/DictionaryBasedTempPath.h"
+#include "gitgraph.h"
 #include "SimpleList.h"
 #include "NodeClassification.h"
 
 //using namespace LogCache;
 
-typedef CString CDictionaryBasedTempPath;
 /**
  * \ingroup TortoiseProc
  * Helper class, representing a revision with all the required information
@@ -147,7 +147,7 @@ inline const CDictionaryBasedTempPath& CFullGraphNode::GetPath() const
 
 inline CDictionaryBasedPath CFullGraphNode::GetRealPath() const
 {
-    return CDictionaryBasedPath (path.GetBasePath().GetDictionary(), realPathID);
+//    return CDictionaryBasedPath (path.GetBasePath().GetDictionary(), realPathID);
 }
 
 inline const CFullGraphNode* CFullGraphNode::GetCopySource() const

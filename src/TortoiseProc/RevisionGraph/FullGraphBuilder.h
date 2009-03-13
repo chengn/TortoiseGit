@@ -18,7 +18,8 @@
 //
 #pragma once
 
-#include "RevisionInfoContainer.h"
+//#include "RevisionInfoContainer.h"
+#include "gitgraph.h"
 
 namespace LogCache
 {
