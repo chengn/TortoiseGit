@@ -117,25 +117,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Debug|Win32'">.\LIB-Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Debug|Win32'">$(SolutionDir)..\bin\Release\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='LIB Debug|Win32'">.\LIB-Debug\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Debug|x64'">$(Platform)\$(Configuration)64\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Debug|x64'">$(SolutionDir)..\bin\Release64\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='LIB Debug|x64'">$(Platform)\$(Configuration)64\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">..\..\bin\$(Configuration)\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">$(SolutionDir)..\bin\Release\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">..\..\obj\libcurl\$(Configuration)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|x64'">..\..\bin\$(Configuration)64\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|x64'">$(SolutionDir)..\bin\Release64\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|x64'">..\..\obj\libcurl\$(Configuration)64\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLL Release|x64'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">..\..\bin\$(Configuration)\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">$(SolutionDir)..\bin\Release\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">..\..\obj\libcurl\$(Configuration)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|x64'">..\..\bin\$(Configuration)64\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|x64'">$(SolutionDir)..\bin\Release64\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|x64'">..\..\obj\libcurl\$(Configuration)64\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLL Debug|x64'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Release|Win32'">.\LIB-Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Release|Win32'">$(SolutionDir)..\bin\Release\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='LIB Release|Win32'">.\LIB-Release\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'">$(Platform)\$(Configuration)64\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'">$(SolutionDir)..\bin\Release64\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'">$(Platform)\$(Configuration)64\</IntDir>
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'" />
@@ -161,6 +161,10 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">$(ProjectName)32</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">$(ProjectName)32</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='LIB Debug|Win32'">$(ProjectName)32</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='LIB Release|Win32'">$(ProjectName)32</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='LIB Debug|Win32'">
     <ClCompile>
@@ -242,7 +246,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeaderOutputFile>.\DLL-Release/vc6libcurl.pch</PrecompiledHeaderOutputFile>
-      <ProgramDataBaseFileName>$(SolutionDir)\..\bin\Release\bin\libcurl.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\bin\Release\bin\libcurl.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>
@@ -252,9 +256,9 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>ws2_32.lib;wldap32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(SolutionDir)\..\bin\Release\bin\libcurl32.dll</OutputFile>
+      <OutputFile>$(SolutionDir)..\bin\Release\bin\libcurl32.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ImportLibrary>$(SolutionDir)\..\bin\Release\bin\libcurl32.lib</ImportLibrary>
+      <ImportLibrary>$(SolutionDir)..\bin\Release\bin\libcurl32.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -293,9 +297,9 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>ws2_32.lib;wldap32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(SolutionDir)\..\bin\Release64\bin\libcurl.dll</OutputFile>
+      <OutputFile>$(SolutionDir)..\bin\Release64\bin\libcurl.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ImportLibrary>$(SolutionDir)\..\bin\Release64\bin\libcurl.lib</ImportLibrary>
+      <ImportLibrary>$(SolutionDir)..\bin\Release64\bin\libcurl.lib</ImportLibrary>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <Bscmake>
@@ -321,7 +325,7 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeaderOutputFile>.\DLL-Debug/vc6libcurl.pch</PrecompiledHeaderOutputFile>
-      <ProgramDataBaseFileName>$(SolutionDir)\..\bin\Debug\bin\libcurld.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\bin\Debug\bin\libcurld.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -332,16 +336,16 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>ws2_32.lib;wldap32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(SolutionDir)\..\bin\Debug\bin\libcurld32.dll</OutputFile>
+      <OutputFile>$(SolutionDir)..\bin\Debug\bin\libcurld32.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(SolutionDir)\..\bin\Debug\bin\libcurld32.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(SolutionDir)..\bin\Debug\bin\libcurld32.pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
       <MapFileName>$(IntDir)libcurld32.map</MapFileName>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>$(SolutionDir)\..\bin\Debug\bin\libcurld32.lib</ImportLibrary>
+      <ImportLibrary>$(SolutionDir)..\bin\Debug\bin\libcurld32.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -367,7 +371,7 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeaderOutputFile>.\DLL-Debug/vc6libcurl.pch</PrecompiledHeaderOutputFile>
-      <ProgramDataBaseFileName>$(SolutionDir)\..\bin\Debug64\bin\libcurld.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)..\bin\Debug64\bin\libcurld.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -378,16 +382,16 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>ws2_32.lib;wldap32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(SolutionDir)\..\bin\Debug64\bin\libcurld.dll</OutputFile>
+      <OutputFile>$(SolutionDir)..\bin\Debug64\bin\libcurld.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(SolutionDir)\..\bin\Debug64\bin\libcurl.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(SolutionDir)..\bin\Debug64\bin\libcurl.pdb</ProgramDatabaseFile>
       <GenerateMapFile>true</GenerateMapFile>
       <MapFileName>$(IntDir)libcurld.map</MapFileName>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>$(SolutionDir)\..\bin\Debug64\bin\libcurld.lib</ImportLibrary>
+      <ImportLibrary>$(SolutionDir)..\bin\Debug64\bin\libcurld.lib</ImportLibrary>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <Bscmake>

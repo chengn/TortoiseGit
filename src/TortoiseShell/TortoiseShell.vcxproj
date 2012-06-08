@@ -115,6 +115,12 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|x64'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|x64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">TortoiseGit32</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">TortoiseGit32</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">TortoiseGit32</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TortoiseGit</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TortoiseGit</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Template|x64'">TortoiseGit</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>

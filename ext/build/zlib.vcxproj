@@ -205,45 +205,45 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|Win32'">.\Win32_DLL_ASM_Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|Win32'">$(SolutionDir)..\bin\Release\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|Win32'">.\Win32_DLL_ASM_Debug\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|Win32'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|x64'">$(SolutionDir)..\bin\Release64\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|x64'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">..\..\bin\$(Configuration)\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">$(SolutionDir)..\bin\Release\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">..\..\obj\zlib\$(Configuration)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|x64'">..\..\bin\$(Configuration)64\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|x64'">$(SolutionDir)..\bin\Release64\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL Release|x64'">..\..\obj\zlib\$(Configuration)64\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLL Release|x64'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB ASM Debug|Win32'">.\Win32_LIB_ASM_Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB ASM Debug|Win32'">$(SolutionDir)..\bin\Release\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='LIB ASM Debug|Win32'">.\Win32_LIB_ASM_Debug\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB ASM Debug|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB ASM Debug|x64'">$(SolutionDir)..\bin\Release64\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='LIB ASM Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL ASM Release|Win32'">.\Win32_DLL_ASM_Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL ASM Release|Win32'">$(SolutionDir)..\bin\Release\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL ASM Release|Win32'">.\Win32_DLL_ASM_Release\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLL ASM Release|Win32'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL ASM Release|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL ASM Release|x64'">$(SolutionDir)..\bin\Release64\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL ASM Release|x64'">$(Platform)\$(Configuration)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLL ASM Release|x64'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Debug|Win32'">.\Win32_LIB_Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Debug|Win32'">$(SolutionDir)..\bin\Release\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='LIB Debug|Win32'">.\Win32_LIB_Debug\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Debug|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Debug|x64'">$(SolutionDir)..\bin\Release64\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='LIB Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">..\..\bin\$(Configuration)\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">$(SolutionDir)..\bin\Release\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">..\..\obj\zlib\$(Configuration)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|x64'">..\..\bin\$(Configuration)64\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|x64'">$(SolutionDir)..\bin\Release64\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DLL Debug|x64'">..\..\obj\zlib\$(Configuration)64\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DLL Debug|x64'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Release|Win32'">.\Win32_LIB_Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Release|Win32'">$(SolutionDir)..\bin\Release\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='LIB Release|Win32'">.\Win32_LIB_Release\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'">$(SolutionDir)..\bin\Release64\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'">$(Platform)\$(Configuration)\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB ASM Release|Win32'">.\Win32_LIB_ASM_Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB ASM Release|Win32'">$(SolutionDir)..\bin\Release\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='LIB ASM Release|Win32'">.\Win32_LIB_ASM_Release\</IntDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB ASM Release|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='LIB ASM Release|x64'">$(SolutionDir)..\bin\Release64\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='LIB ASM Release|x64'">$(Platform)\$(Configuration)\</IntDir>
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|Win32'" />
@@ -293,6 +293,22 @@
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|Win32'">zlib132</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DLL ASM Release|Win32'">zlib132</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DLL Debug|Win32'">zlib132</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DLL Release|Win32'">zlib132</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='LIB ASM Debug|Win32'">zlib132</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='LIB ASM Release|Win32'">zlib132</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='LIB Debug|Win32'">zlib132</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='LIB Release|Win32'">zlib132</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|x64'">zlib1</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DLL ASM Release|x64'">zlib1</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DLL Debug|x64'">zlib1</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DLL Release|x64'">zlib1</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='LIB ASM Debug|x64'">zlib1</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='LIB ASM Release|x64'">zlib1</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='LIB Debug|x64'">zlib1</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='LIB Release|x64'">zlib1</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DLL ASM Debug|Win32'">
     <Midl>
@@ -416,14 +432,14 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(SolutionDir)\..\bin\Release\bin\zlib132.dll</OutputFile>
+      <OutputFile>$(SolutionDir)..\bin\Release\bin\zlib132.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ModuleDefinitionFile>..\zlib\win32\zlib.def</ModuleDefinitionFile>
-      <ProgramDatabaseFile>$(SolutionDir)\..\bin\Release\bin\zlib132.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(SolutionDir)..\bin\Release\bin\zlib132.pdb</ProgramDatabaseFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>$(SolutionDir)\..\bin\Release\bin\zlib132.lib</ImportLibrary>
+      <ImportLibrary>$(SolutionDir)..\bin\Release\bin\zlib132.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -461,14 +477,14 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(SolutionDir)\..\bin\Release64\bin\zlib1.dll</OutputFile>
+      <OutputFile>$(SolutionDir)..\bin\Release64\bin\zlib1.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ModuleDefinitionFile>..\zlib\win32\zlib.def</ModuleDefinitionFile>
-      <ProgramDatabaseFile>$(SolutionDir)\..\bin\Release64\bin\zlib1.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(SolutionDir)..\bin\Release64\bin\zlib1.pdb</ProgramDatabaseFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>$(SolutionDir)\..\bin\Release64\bin\zlib1.lib</ImportLibrary>
+      <ImportLibrary>$(SolutionDir)..\bin\Release64\bin\zlib1.lib</ImportLibrary>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <Bscmake>
@@ -714,15 +730,15 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(SolutionDir)\..\bin\Debug\bin\zlib1d32.dll</OutputFile>
+      <OutputFile>$(SolutionDir)..\bin\Debug\bin\zlib1d32.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ModuleDefinitionFile>..\zlib\win32\zlib.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(SolutionDir)\..\bin\Debug\bin\zlib1d32.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(SolutionDir)..\bin\Debug\bin\zlib1d32.pdb</ProgramDatabaseFile>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>$(SolutionDir)\..\bin\Debug\bin\zlib1d32.lib</ImportLibrary>
+      <ImportLibrary>$(SolutionDir)..\bin\Debug\bin\zlib1d32.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <Bscmake>
@@ -760,15 +776,15 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(SolutionDir)\..\bin\Debug64\bin\zlib1d.dll</OutputFile>
+      <OutputFile>$(SolutionDir)..\bin\Debug64\bin\zlib1d.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <ModuleDefinitionFile>..\zlib\win32\zlib.def</ModuleDefinitionFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>$(SolutionDir)\..\bin\Debug64\bin\zlib1d.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(SolutionDir)..\bin\Debug64\bin\zlib1d.pdb</ProgramDatabaseFile>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <ImportLibrary>$(SolutionDir)\..\bin\Debug64\bin\zlib1d.lib</ImportLibrary>
+      <ImportLibrary>$(SolutionDir)..\bin\Debug64\bin\zlib1d.lib</ImportLibrary>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
     <Bscmake>
