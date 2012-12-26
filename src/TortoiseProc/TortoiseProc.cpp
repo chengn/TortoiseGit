@@ -196,6 +196,7 @@ BOOL CTortoiseProcApp::InitInstance()
 	} while (langId);
 	setlocale(LC_ALL, "");
 
+	//git内核，使用msysgit实现
 	if(!CheckMsysGitDir())
 	{
 		UINT ret = CMessageBox::Show(NULL, IDS_PROC_NOMSYSGIT, IDS_APPNAME, 3, IDI_HAND, IDS_PROC_SETMSYSGITPATH, IDS_PROC_GOTOMSYSGITWEBSITE, IDS_ABORTBUTTON);
@@ -210,6 +211,7 @@ BOOL CTortoiseProcApp::InitInstance()
 		}
 		return FALSE;
 	}
+	//msysgit的版本要求
 	if (CAppUtils::GetMsysgitVersion() < 0x01070a00)
 	{
 		int ret = CMessageBox::ShowCheck(NULL, IDS_PROC_OLDMSYSGIT, IDS_APPNAME, 1, IDI_EXCLAMATION, IDS_PROC_GOTOMSYSGITWEBSITE, IDS_ABORTBUTTON, IDS_IGNOREBUTTON, _T("OldMsysgitVersionWarning"), IDS_PROC_NOTSHOWAGAINIGNORE);
@@ -229,7 +231,7 @@ BOOL CTortoiseProcApp::InitInstance()
 	// InitCommonControls() is required on Windows XP if an application
 	// manifest specifies use of ComCtl32.dll version 6 or later to enable
 	// visual styles.  Otherwise, any window creation will fail.
-
+	//添加界面控件
 	INITCOMMONCONTROLSEX used = {
 		sizeof(INITCOMMONCONTROLSEX),
 			ICC_ANIMATE_CLASS | ICC_BAR_CLASSES | ICC_COOL_CLASSES | ICC_DATE_CLASSES |
@@ -243,9 +245,11 @@ BOOL CTortoiseProcApp::InitInstance()
 	AfxEnableControlContainer();
 	AfxInitRichEdit2();
 	CWinAppEx::InitInstance();
+	//注册表中保存相关应用数据
 	SetRegistryKey(_T("TortoiseGit"));
 	AfxGetApp()->m_pszProfileName = _tcsdup(_T("TortoiseProc")); // w/o this ResizableLib will store data under TortoiseGitProc which is not compatible with older versions
 
+	//从菜单中获取操作的命令
 	CCmdLineParser parser(AfxGetApp()->m_lpCmdLine);
 
 	hWndExplorer = NULL;
@@ -265,6 +269,7 @@ BOOL CTortoiseProcApp::InitInstance()
 	if (CRegDWORD(_T("Software\\TortoiseGit\\Debug"), FALSE)==TRUE)
 		AfxMessageBox(AfxGetApp()->m_lpCmdLine, MB_OK | MB_ICONINFORMATION);
 
+	//针对目录和文件分别对待
 	if ( parser.HasKey(_T("path")) && parser.HasKey(_T("pathfile")))
 	{
 		CMessageBox::Show(NULL, IDS_ERR_INVALIDPATH, IDS_APPNAME, MB_ICONERROR);
@@ -368,6 +373,7 @@ BOOL CTortoiseProcApp::InitInstance()
 		SetCurrentDirectory(pathbuf);
 	}
 
+	//检查新版本
 	CheckForNewerVersion();
 
 	if (parser.HasVal(_T("configdir")))
@@ -377,6 +383,7 @@ BOOL CTortoiseProcApp::InitInstance()
 //		g_GitGlobal.SetConfigDir(sConfigDir);
 	}
 
+	//句柄创建信号量
 	CAutoGeneralHandle TGitMutex = ::CreateMutex(NULL, FALSE, _T("TortoiseGitProc.exe"));
 	if (!g_Git.SetCurrentDir(cmdLinePath.GetWinPathString(), parser.HasKey(_T("submodule")) == TRUE))
 	{
